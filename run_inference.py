@@ -46,6 +46,7 @@ def main(conf: HydraConfig) -> None:
 
     # Initialize sampler and target/contig.
     sampler = iu.sampler_selector(conf)
+    log.debug(sampler)
 
     # Loop over number of designs to sample.
     design_startnum = sampler.inf_conf.design_startnum
